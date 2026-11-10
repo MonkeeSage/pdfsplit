@@ -1,0 +1,14 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pdfsplit"
+version = "0.1.0"
+description = "Split two-column (side-by-side) PDF pages into separate pages"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["pypdf>=4.0", "pypdfium2>=4.0"]
+
+[project.scripts]
+pdfsplit = "pdfsplit.cli:main"
